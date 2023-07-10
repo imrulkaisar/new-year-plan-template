@@ -1,0 +1,8 @@
+/* Main template */
+.main-template {
+  text-align: center;
+}
+.main-template header {
+  background: #f7f7f7;
+  padding: 40px 0;
+}

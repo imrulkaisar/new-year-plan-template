@@ -5,6 +5,7 @@
 .main-template header {
   background: #f7f7f7;
   padding: 40px 0;
+  height: auto;
 }
 .main-template main {
   min-height: 70vh;

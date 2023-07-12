@@ -28,6 +28,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+img {
+  max-width: 100%;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -51,10 +54,13 @@ a {
 .button-primary:hover {
   background: #cd4008;
 }
+section {
+  padding: 60px 0;
+}
 
 /* Header css */
 header {
-  height: min(700px, 100vh);
+  height: min(750px, 100vh);
   background-image: url("images/banner/banner1.png");
   background-size: cover;
   background-position: center;
@@ -79,6 +85,36 @@ header .content-area {
   padding: 120px 0;
 }
 
+/* failures section styles */
+.failures .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.failures .image {
+  flex-basis: min(100%, 500px);
+}
+.failures .content {
+  flex-basis: min(100%, 550px);
+  padding-right: 130px;
+}
+.failures .content h2 {
+  margin-bottom: 20px;
+}
+.failures .content .list {
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+.failures .list li {
+  padding-left: 30px;
+  background-image: url("images/check.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  margin-bottom: 5px;
+}
 /* Footer styles */
 footer {
   padding: 120px 0;

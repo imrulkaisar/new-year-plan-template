@@ -54,9 +54,14 @@ img {
 .button-primary:hover {
   background: #cd4008;
 }
+.button-secondary {
+  background: #ffffff;
+  color: var(--primary-color);
+}
 section {
   padding: 60px 0;
 }
+
 
 /* Header css */
 header {
@@ -152,12 +157,58 @@ header .content-area {
 .footer-banner .content h2 {
   color: #ffffff;
 }
-.footer-banner .content .button {
-  background: #ffffff;
-  color: var(--primary-color);
-}
+
 /* Footer styles */
 footer {
   padding: 120px 0;
   background: var(--title-color);
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .column.one {
+  flex-basis: min(100%, 350px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .column.one h4 {
+  font-size: 45px;
+  color: #ffffff
+}
+footer .column.one p {
+  color: #ffffff;
+}
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+footer .column.two {
+  flex-basis: min(100%, 300px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .column.two h4 {
+  font-size: 25px;
+  color: #ffffff
+}
+footer input:not(input[type="submit"]) {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 16px;
+}
+footer input:invalid {
+  outline-color: #ff0000;
+}
+footer input::placeholder {
+  color: #ffffff;
 }

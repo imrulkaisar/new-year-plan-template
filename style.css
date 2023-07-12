@@ -50,6 +50,7 @@ img {
 .button-primary {
   color: #ffffff;
   background: var(--primary-color);
+  transition: 0.5s;
 }
 .button-primary:hover {
   background: #cd4008;
@@ -205,6 +206,10 @@ footer input:not(input[type="submit"]) {
   margin-bottom: 15px;
   color: #ffffff;
   font-size: 16px;
+}
+footer input[type="submit"] {
+  border: none;
+  cursor: pointer;
 }
 footer input:invalid {
   outline-color: #ff0000;

@@ -1,0 +1,15 @@
+/* common css */
+
+:root {
+  scroll-behavior: smooth;
+  --primary-color: #005FAC;
+}
+
+/* header styles */
+header {
+  background-image: url("../images/banner/banner3.png");
+}
+header h1,
+header p {
+  color: #ffffff;
+}
